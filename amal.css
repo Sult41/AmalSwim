@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #ffe0f0, #d0f4ff);
+  color: #4b006e;
+  text-align: center;
+  min-height: 100vh;
+  padding-bottom: 80px; 
+}
+
+header {
+  background: linear-gradient(to right, #ff9ebc, #a0eaff);
+  color: white;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  background-color: #ff70a6;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #ff3f7e;
+  transform: scale(1.05);
+}
+
+main {
+  padding: 30px 20px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: #f06292;
+  margin-bottom: 30px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.image-container,
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.image-container img,
+.video-container video {
+  width: 280px;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #ffb6d9;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.image-container img:hover,
+.video-container video:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.lightbox-overlay,
+.videobox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox-overlay img,
+.videobox-overlay video {
+  max-width: 90%;
+  max-height: 90%;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.5);
+}
+
+
+footer {
+  background-color: #ff9ebc;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+}
