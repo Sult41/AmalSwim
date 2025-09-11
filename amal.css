@@ -128,3 +128,88 @@ footer {
   bottom: 0;
   box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
 }
+/* Base styles (for desktop by default) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.gallery {
+  padding: 20px;
+}
+
+.image-container,
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.image-container img,
+.video-container video {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive media queries */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .image-container img,
+  .video-container video {
+    width: 45%;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  header {
+    padding: 15px 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .image-container img,
+  .video-container video {
+    width: 90%;
+  }
+}
+
+
